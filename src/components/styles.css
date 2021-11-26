@@ -1,0 +1,48 @@
+.link {
+  text-decoration: none;
+  color: black;
+}
+
+.home {
+  display: flex;
+  align-items: center;
+}
+
+.home-icon {
+  width: 25px;
+  height: 25px;
+  margin-bottom: 5px;
+}
+
+.navbar-links {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navbar-header {
+  display: inline-flex;
+  align-items: center;
+  width: 240px;
+}
+
+
+.navbar-mobile {
+  display: none;
+}
+
+
+@media screen and (max-width: 768px) {
+  .navbar-links {
+    display: none;
+  }
+
+  .navbar-mobile {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 90%;
+  }
+}
