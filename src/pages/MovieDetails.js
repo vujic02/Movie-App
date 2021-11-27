@@ -9,11 +9,10 @@ const MovieDetails = () => {
   const [movieDetails, setMovieDetails] = useState([]);
   const [favorites, setFavorites] = useState([]);
   const [loaded, setLoaded] = useState(false);
-  // this needs to be done with redux
   const [toggleFavorite, setToggleFavorite] = useState(false);
 
   // In real world app the api key would be highly secret / hidden, in this case i'm going to leave it available for the public so everything works without any external settings adjusting.
-  let url = `http://omdbapi.com/?apikey=d3883156&i=${params.movieID}`;
+  let url = `https://omdbapi.com/?apikey=d3883156&i=${params.movieID}`;
 
   useEffect(() => {
     const fetchMovieDetails = async () => {

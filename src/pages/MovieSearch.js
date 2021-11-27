@@ -13,7 +13,7 @@ const MovieSearch = () => {
   const [movies, setMovies] = useState();
 
   // In real world app the api key would be highly secret / hidden, in this case i'm going to leave it available for the public so everything works without any external settings adjusting.
-  let url = `http://www.omdbapi.com/?s=${searchedValue}&page=${pageNumber}&apikey=d3883156`;
+  let url = `https://www.omdbapi.com/?s=${searchedValue}&page=${pageNumber}&apikey=d3883156`;
 
   const handleSearch = async () => {
     try {
