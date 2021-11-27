@@ -19,6 +19,7 @@ const Input = ({ handleSearch }) => {
   useEffect(() => {
     setSearchedValue(searchedContextValue);
   }, [searchedContextValue]);
+
   return (
     <Paper
       component="form"

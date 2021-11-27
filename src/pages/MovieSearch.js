@@ -30,7 +30,7 @@ const MovieSearch = () => {
   };
 
   useEffect(() => {
-    searchedValue && handleSearch();
+    searchedValue && handleSearch(); // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [pageNumber]);
 
   return (

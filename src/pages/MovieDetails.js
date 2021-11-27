@@ -23,7 +23,7 @@ const MovieDetails = () => {
       setLoaded(true);
     };
 
-    return fetchMovieDetails();
+    return fetchMovieDetails(); // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
@@ -37,6 +37,7 @@ const MovieDetails = () => {
     localStorage.setItem("favorites", JSON.stringify(favorites));
   });
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     if (favorites.some((movie) => movie.imdbID === movieDetails.imdbID)) {
       setToggleFavorite(true);

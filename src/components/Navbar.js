@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { Grid, Button, AppBar, Toolbar, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
-import "./styles.css";
 import MenuIcon from "@mui/icons-material/Menu";
-import Drawer from "./Drawer";
 import HomeIcon from "@mui/icons-material/Home";
+import Drawer from "./Drawer";
+import "./styles.css";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
