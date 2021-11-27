@@ -33,7 +33,7 @@ export default function TemporaryDrawer({ open, setOpen }) {
                 />
               </ListItem>
             </Link>
-            <Link to="favorite" style={{ textDecoration: "none" }}>
+            <Link to="favorite-movies" style={{ textDecoration: "none" }}>
               <ListItem button>
                 <ListItemIcon>
                   <BookmarksIcon />
